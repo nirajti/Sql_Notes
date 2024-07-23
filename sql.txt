@@ -1,3 +1,9 @@
+### SELECT Statements
+```sql
+SELECT column1, column2
+FROM table_name
+WHERE condition;
+
 -- The basic command of sql 
 
 --Show your data
