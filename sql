@@ -1,0 +1,88 @@
+-- The basic command of sql 
+
+--Show your data
+SHOW DATABASES
+
+-- Create a new  databse name -
+CREATE DATABASE Nirajtiwari
+USE Nirajtiwari
+
+--Create a new table, used a specific table name
+CREATE TABLE students (
+Name VARCHAR(100),
+Employee INT PRIMARY KEY,
+Email VARCHAR(100),
+Possition VARCHAR(200),
+Skills VARCHAR(100),
+Location VARCHAR(100) 
+)
+
+-- Insert the Value.
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Niraj" , '2125559', "nirajtiwari329@gmail.com", "Software Engineer", "React js", "Noida")
+
+INSERT INTO students (Name, Employee, Email, Possition, Skills, Location)
+VALUES
+  ('Amit', 2233445, 'amit@example.com', 'Data Scientist', 'R', 'Pune'),
+  ('Sita', 3344556, 'sita@example.com', 'DevOps Engineer', 'Docker', 'Hyderabad');
+  
+  INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+  VALUE ('Niraj Tiwari', '2125559', "nirajtiwari329@gmail.com", "Software Engineer", "React js", "Noida")
+
+INSERT INTO students (Name, Employee, Email, Possition, Skills, Location)
+VALUES ('Rahul', 1234567, 'rahul@example.com', 'Software Engineer', 'C++', 'Mumbai');
+
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Priya" , '212502', "priya329@gmail.com", "Software Engineer", "Java", "Bangolore")
+
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Nisha" , '2100559', "Nisha29@gmail.com", "Software Engineer", "Python", "Chandigarh")
+
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Ranjan" , '2189559', "ranjaniwari300@gmail.com", "Software Engineer", "Node js", "New Delhi")
+
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Abhishek" , '1125559', "abhitiwari329@gmail.com", "Software Engineer", "React nativ", "Gurugram")
+
+INSERT INTO students(Name, Employee, Email, Possition, Skills, Location)
+VALUE("Pragya" , '2125550', "Pragyamishra11@gmail.com", "Software Engineer", "Php", "Channi")
+
+
+-- This is a single line comment.
+/*
+This is a multiline comment
+*/
+
+
+-- update your name like update command.
+UPDATE students
+SET Name = 'Niraj Tiwari'
+WHERE Employee = 2125559;
+
+UPDATE students
+SET Name = 'Pragya Mishra'
+WHERE Employee = 2125550;
+
+UPDATE students
+SET Email = 'Pragyamishra123@gmail.com'
+WHERE Employee = 2125550;
+
+-- Delete the record of the student named 'Niraj Tiwari'
+DELETE FROM students
+WHERE Employee = 2125559;
+
+-- Again add a new table 
+INSERT INTO students (Name, Employee, Email, Possition, Skills, Location)
+VALUES
+  ('Amit', 2233445, 'amit@example.com', 'Data Scientist', 'R', 'Pune'),
+  ('Sita', 3344556, 'sita@example.com', 'DevOps Engineer', 'Docker', 'Hyderabad');
+  
+
+
+-- Show name
+SELECT * FROM students
+WHERE Name = 'Niraj Tiwari';
+
+
+-- Show your Data
+SELECT * FROM students
